@@ -1,2 +1,4 @@
 Flask
 waitress
+sentence-transformers
+flask_cors

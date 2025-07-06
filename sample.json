@@ -1,0 +1,11 @@
+[{"bestMatchSentence": "• Maintained AWS EC2 and RDS instances for E-Commerce center leveraging a monolithic architecture. • Documented sprints, story points, logs, issues, bugs, source control, and workflows through GitHub",
+ "jobSentence": "Experience working with cloud services like AWS.",
+ "similarityPercent": 60.71}, 
+ 
+ {"bestMatchSentence": "Student Developer | Life of A Server INC. April 2023 – Dec 2023 • Proficiently used Typescript with React to ensure scalable industry-standard code",
+ "jobSentence": "Ability to build user interfaces with React.",
+ "similarityPercent": 59.85}, 
+
+ {"bestMatchSentence": "• Utilized GitHub Actions to automate scripting calls every hour allowing for a constant stream of data. • Plotted best fits, percentile error, standard deviation and regression through Matplotlib",
+ "jobSentence": "Knowledge of data analysis and visualization.",
+ "similarityPercent": 42.07}]
