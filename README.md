@@ -11,7 +11,9 @@ A minimal Flask API containerized with Docker and securely published to the inte
 - Cloudflare account
 - A domain added to Cloudflare and nameservers updated
 - `cloudflared` installed
-
+```powershell
+winget install --id Cloudflare.cloudflared
+```
 ---
 
 ### 2️⃣ Build and Run the Flask API
@@ -35,6 +37,11 @@ cloudflared tunnel login
 **Create a tunnel:**
 ```powershell
 cloudflared tunnel create flask-tunnel
+```
+or if you are using an existing tunnel
+**Create a tunnel:**
+```powershell
+cloudflared tunnel token flask-tunnel
 ```
 
 **Create config.yml:**
