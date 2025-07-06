@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify
 from sentence_transformers import SentenceTransformer, util
 import re
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 

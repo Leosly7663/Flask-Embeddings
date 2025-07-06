@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Install dependencies only if requirements.txt changes
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy your application code separately
 COPY . .
