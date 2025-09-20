@@ -120,3 +120,22 @@ docker-compose build
 MIT License
 
 ---
+
+# Force a small embed pass over any dataset (bypass filtering)
+python test.py --base http://127.0.0.1:8000 --limit 25 --bypass-dataset
+
+# Re-embed a single row by id
+python test.py --base http://127.0.0.1:8000 --id "water_main_breaks/feature/8110"
+
+# Skip admin calls, only run /combine-match
+python test.py --base http://127.0.0.1:8000 --no-admin
+
+# 1 Basic (hybrid tests, no geo)
+python test_search.py --base http://127.0.0.1:8000 --dataset water_main_breaks
+
+# 3 Geo + tighter radius and stronger distance boost
+python test_search.py --base http://127.0.0.1:8000  --geo --radius 0.6 --geo-weight 0.7
+
+# 4 More results + geo
+python test_search.py --base http://127.0.0.1:8000 --dataset water_main_breaks --topk 15 --geo
+
